@@ -20,7 +20,7 @@ public_users.post("/register", async (req, res) => {
 
     res.status(200).json({ massage: "user successfully registred" });
   } catch (error) {
-    res.status(500).json({ massage: "unable to register user" });
+    res.status(500).json({ massage: "Server Error: unable to register user" });
   }
 });
 
